@@ -29,11 +29,10 @@ public class Q2 {
         if (node == null) {
             return;
         }
-
-        printLeaves(node.right);
         if (node.left == null && node.right == null) {
             System.out.print(node.val + " ");
         }
+        printLeaves(node.right);
         printLeaves(node.left);
     }
 
