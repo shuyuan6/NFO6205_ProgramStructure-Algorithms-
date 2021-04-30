@@ -76,6 +76,13 @@ public class Virus {
         };
         int maxTime1 = 5;
         System.out.println("The result should be can infect: " + virus1.getResult(body1, 5));
-        
+
+        Virus virus2 = new Virus();
+        char[][] body2 = {
+                {'0', 'X'},
+                {'X', '0'}
+        };
+        int maxTime2 = 2;
+        System.out.println("The result should be cannot infect: " + virus2.getResult(body2, 2));
     }
 }
